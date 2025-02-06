@@ -1,0 +1,11 @@
+.radio-question-item{
+    text-align: left;
+}
+
+.checkbox-question-item{
+    text-align: left;
+}
+
+.MuiAccordionSummary-content span{
+    font-weight: 900;
+}
