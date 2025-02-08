@@ -1,0 +1,17 @@
+.form-wrapper{
+    width: 40vw;
+
+    input, label{
+        padding: 0 0 0 10px;
+        margin: 10px 0;
+        font-size: 2em;
+        width: 60%;
+        height: 42px;
+    }
+
+    input.submit-button{
+        width: 40%;
+        height: 60px;
+    }
+}
+

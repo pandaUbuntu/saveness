@@ -5,8 +5,6 @@ import { list } from './fixtures/questionFixtures'
 
 
 function App() {
-  
-
   return (
     <>
       {
