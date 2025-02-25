@@ -12,6 +12,7 @@ function App() {
           <Question key={question.id} order={index + 1} question={question} />
         ))
       }
+      <a href="/result" ><button className="green-button success-button">Перевірити</button></a>
     </>
   )
 }

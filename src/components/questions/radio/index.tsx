@@ -4,7 +4,6 @@ type RadioQuestionType = {
     question: QuestionPropsType,
 }
 const RadioQuestion = (props:RadioQuestionType) => {
-  
 
   return (
     <>

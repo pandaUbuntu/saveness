@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.red-button{
+  background-color: rgb(222 138 138 / 44%)
+}
+
+.green-button{
+  background-color: rgba(124, 198, 134, 0.44)
+}
+
+
+.success-button{
+    margin-top: 20px;
+    padding: 24px;
+}
