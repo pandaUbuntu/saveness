@@ -1,12 +1,16 @@
 import React from "react"
 import {Md5} from 'ts-md5'
 import { UserType } from "../../../types/user"
+import { useNavigate } from "react-router"
 import './style.css'
+import Header from "../../header"
 
 const MainPage = () => {
-    
+    let navigate = useNavigate();
+
     function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault()
+
         const form = event.currentTarget
         const formElements = form.elements as typeof form.elements & {
           usernameInput: HTMLInputElement
@@ -22,19 +26,25 @@ const MainPage = () => {
         }
         
         localStorage.setItem(user.id, JSON.stringify(user))
-        console.log(localStorage);
+
+        localStorage.setItem("result", JSON.stringify([]));
+        navigate('/question')
       }
 
 
   return (
+    <>
+        <Header />
         <div className="form-wrapper">
             <h1>Зареєструйтесь</h1>
-            <form onSubmit={handleSubmit} >
+            <form onSubmit={handleSubmit}>
                 <input type="text" name="userName" id="userName" placeholder="Введіть вашe ім'я"/>
                 <input type="date" name="userBirthday" id="userBirthday"/>
-                <input className="submit-button" type="submit" value="Почати тест" />
+                <input className="submit-button" type="submit" value="Почати тест"/>
             </form>
         </div>
+    </>
+        
   )
 }
 

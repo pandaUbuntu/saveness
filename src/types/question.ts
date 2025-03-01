@@ -23,3 +23,8 @@ export type QuestionPropsType = {
     question: Question,
     
 }
+
+export type ResultType = {
+    questionId: number,
+    answerId: number[],
+}

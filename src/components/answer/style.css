@@ -1,7 +1,16 @@
 .red-li{
-    color: rgb(222 138 138 / 44%)
+    color: rgb(222 138 138 / 44%);
 }
   
 .green-li{
-    color: rgba(124, 198, 134, 0.44)
+    color: rgba(124, 198, 134, 0.44);
+}
+
+.green-li-bold{
+    color: rgba(124, 198, 134, 0.44);
+    font-weight: bold;
+}
+
+.ul-result li{
+    text-align: left;
 }
